@@ -1,20 +1,29 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import ClientePage from "./pages/ClientePage";
+import './App.css'
+import { Container, Nav, Navbar } from 'react-bootstrap'
+import RotaPage from './utils/RotaPage'
 
 function App() {
+
   return (
     <>
-      <div className="container">
-        <Navbar>
-          
+      <div className={`container`}>
+        <Navbar expand="lg" className="bg-body-tertiary">
+          <Container>
+            <Navbar.Brand href="#home">Meu app</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="/cliente">Cliente</Nav.Link>
+                <Nav.Link href="/lista-cliente">Lista Cliente</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
         </Navbar>
-        <ClientePage></ClientePage>
+        
+        <RotaPage></RotaPage>
       </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
