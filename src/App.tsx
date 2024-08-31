@@ -13,8 +13,10 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="/cliente">Cliente</Nav.Link>
-                <Nav.Link href="/lista-cliente">Lista Cliente</Nav.Link>
+                <Nav.Link href="/cliente">Clientes</Nav.Link>
+                <Nav.Link href="/lista-cliente">Lista Clientes</Nav.Link>
+                <Nav.Link href="/produto">Produtos</Nav.Link>
+                <Nav.Link href="/lista-produto">Lista Produtos</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
